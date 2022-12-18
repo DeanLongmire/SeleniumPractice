@@ -16,7 +16,6 @@ driver = Chrome(chrome_options=opts)
 driver.get("https://www.sports-reference.com/cfb/schools/tennessee/2022.html")
 
 
-
     
 
 
