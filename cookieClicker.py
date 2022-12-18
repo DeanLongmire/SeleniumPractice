@@ -28,7 +28,7 @@ cookie = driver.find_element(By.ID, "bigCookie")
 cookieCount = driver.find_element(By.ID, "cookies")
 items = [driver.find_element(By.ID, ("productPrice" + str(i))) for i in range(1,-1,-1)]
 
-for i in range(500000):
+while(1):
     cookie.click()
     count = int(cookieCount.text.split(" ")[0])
     for item in items:
@@ -39,8 +39,6 @@ for i in range(500000):
             upgrade_actions.click()
             upgrade_actions.perform()
 
-
-#items = [driver.find_element(By.ID, (("productPrice" + str(i)) for i in range(1,-1,-1)))]
 
 
 
